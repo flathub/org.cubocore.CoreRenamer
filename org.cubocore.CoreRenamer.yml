@@ -28,7 +28,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/cubocore/libcprime.git
-        tag: v4.3.0
+        tag: v4.4.1
   - name: corerenamer
     post-install:
       - install -Dp -m 644 org.cubocore.CoreRenamer.appdata.xml /app/share/appdata/org.cubocore.CoreRenamer.appdata.xml
@@ -42,5 +42,4 @@ modules:
         path: org.cubocore.CoreRenamer.appdata.xml
       - type: git
         url: https://gitlab.com/cubocore/coreapps/corerenamer.git
-        tag: v4.3.0
-
+        tag: v4.4.0
