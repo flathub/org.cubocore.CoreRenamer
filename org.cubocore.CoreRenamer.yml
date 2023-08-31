@@ -8,7 +8,7 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --filesystem=home # Required to import any files or folders to batch rename them
-  - --filesystem=xdg-config
+  - --filesystem=xdg-config:create
   - --device=dri
   - --talk-name=org.freedesktop.Notifications
 cleanup:
