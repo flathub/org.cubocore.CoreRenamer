@@ -8,7 +8,6 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --filesystem=home # Required to import any files or folders to batch rename them
-  - --filesystem=xdg-config:create
   - --device=dri
   - --talk-name=org.freedesktop.Notifications
 cleanup:
@@ -23,9 +22,6 @@ cleanup:
 modules:
   - name: libcprime
     buildsystem: cmake-ninja
-    config-opts:
-      - -DCMAKE_INSTALL_PREFIX=/app
-      - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: git
         url: https://gitlab.com/cubocore/libcprime.git
@@ -34,10 +30,6 @@ modules:
     post-install:
       - install -Dp -m 644 org.cubocore.CoreRenamer.appdata.xml /app/share/appdata/org.cubocore.CoreRenamer.appdata.xml
     buildsystem: cmake-ninja
-    config-opts:
-      - -DCMAKE_INSTALL_PREFIX=/app
-      - -DCMAKE_BUILD_TYPE=Release
-      - -DCMAKE_LIBRARY_PATH=/app/lib
     sources:
       - type: file
         path: org.cubocore.CoreRenamer.appdata.xml
