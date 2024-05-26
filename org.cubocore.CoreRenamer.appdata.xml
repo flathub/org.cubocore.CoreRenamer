@@ -5,21 +5,21 @@
     <id>org.cubocore.CoreRenamer</id>
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-3.0</project_license>
-    
+
     <project_group>CuboCore</project_group>
     <developer_name>CuboCore Group</developer_name>
-    
+
     <launchable type="desktop-id">org.cubocore.CoreRenamer.desktop</launchable>
-    
+
     <name>CoreRenamer</name>
     <summary>A simple lightweight batch file renamer</summary>
-    
+
     <description>
         <p>
             CoreRenamer is a simple batch-renaming application and a handy tool for people who have to regularly handle a large number of files by renaming them. 
         </p>
     </description>
-    
+
     <keywords>
       <keyword>CoreRenamer</keyword>
       <keyword>File Renamer</keyword>
@@ -40,17 +40,13 @@
     <url type="help">https://gitlab.com/cubocore/coreapps/corerenamer/-/blob/master/README.md</url>
     <url type="bugtracker">https://gitlab.com/cubocore/coreapps/corerenamer/-/issues</url>
     <url type="contact">https://app.element.io/#/room/#cubocore:matrix.org</url>
-    
+
     <releases>
         <release version="4.5.0" date="2023-08-27"/>
         <release version="4.4.0" date="2022-08-02"/>
         <release version="4.3.0" date="2021-12-25"/>
     </releases>
-    
-    <provides>
-        <id>org.cubocore.CoreRenamer</id>
-    </provides>
-    
+
     <screenshots>
         <screenshot type="default">
             <caption>CoreRenamer</caption>
