@@ -1,6 +1,6 @@
 app-id: org.cubocore.CoreRenamer
 runtime: org.kde.Platform
-runtime-version: '5.15-23.08'
+runtime-version: '6.9'
 sdk: org.kde.Sdk
 command: corerenamer
 finish-args:
@@ -25,7 +25,10 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/cubocore/libcprime.git
-        tag: v4.5.0
+        tag: v5.0.0
+        x-checker-data:
+          - type: git
+            tag-pattern: ^v([\d.]+)$
   - name: corerenamer
     post-install:
       - install -Dp -m 644 org.cubocore.CoreRenamer.appdata.xml /app/share/appdata/org.cubocore.CoreRenamer.appdata.xml
@@ -35,4 +38,7 @@ modules:
         path: org.cubocore.CoreRenamer.appdata.xml
       - type: git
         url: https://gitlab.com/cubocore/coreapps/corerenamer.git
-        tag: v4.5.0
+        tag: v5.0.0
+        x-checker-data:
+          - type: git
+            tag-pattern: ^v([\d.]+)$
