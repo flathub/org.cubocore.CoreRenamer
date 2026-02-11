@@ -1,0 +1,33 @@
+--- a/cc.cubocore.CoreRenamer.desktop
++++ b/cc.cubocore.CoreRenamer.desktop
+@@ -5,4 +5,4 @@
+ Exec=corerenamer %F
+-Icon=cc.cubocore.CoreRenamer
++Icon=org.cubocore.CoreRenamer
+ Type=Application
+ Categories=Qt;Utility;X-CSuite;
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -27,6 +27,6 @@
+ #include "corerenamer.h"
+ 
+-extern const QString appID = QStringLiteral(APP_ID);
++extern const QString appID = QStringLiteral("org.cubocore.CoreRenamer");
+ 
+ 
+ int main(int argc, char **argv)
+--- a/cc.cubocore.CoreRenamer.metainfo.xml
++++ b/cc.cubocore.CoreRenamer.metainfo.xml
+@@ -4,4 +4,4 @@
+ <component type="desktop-application">
+-    <id>cc.cubocore.CoreRenamer</id>
++    <id>org.cubocore.CoreRenamer</id>
+ 
+     <metadata_license>CC0-1.0</metadata_license>
+@@ -11,5 +11,5 @@
+     <developer_name>CuboCore Group</developer_name>
+ 
+-    <launchable type="desktop-id">cc.cubocore.CoreRenamer.desktop</launchable>
++    <launchable type="desktop-id">org.cubocore.CoreRenamer.desktop</launchable>
+ 
+     <name>CoreRenamer</name>
