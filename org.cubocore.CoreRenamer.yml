@@ -10,7 +10,7 @@ finish-args:
   - --share=ipc
   - --socket=fallback-x11
   - --socket=wayland
-  - --filesystem=home # Required to import any files or folders to batch rename them
+  - --filesystem=host # Required to rename any files in any location, including the external storage
   - --device=dri
   - --talk-name=org.freedesktop.Notifications
 cleanup:
